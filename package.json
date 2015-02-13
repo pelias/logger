@@ -12,7 +12,8 @@
     "precommit-hook": "1.0.7",
     "tape": "3.0.3",
     "tap-spec": "2.1.2",
-    "winston": "^0.9.0"
+    "winston": "^0.9.0",
+    "pelias-config": "^0.0.7"
   },
   "repository": {
     "type": "git",
