@@ -1,3 +1,7 @@
+/**
+ * The main module of the logger package.
+ */
+
 'use strict';
 
 var winston = require( 'winston' );
@@ -10,7 +14,7 @@ function createLogger( loggerOpts ){
           colorize: true, timestamp: true
         })
       ]
-    }
+    };
   }
 
   return new winston.Logger( loggerOpts );
@@ -18,13 +22,14 @@ function createLogger( loggerOpts ){
 
 var loggers = {};
 
+/**
+ * If a logger named `name` exists, return it; otherwise, create a new one.
+ */
 function getLogger( name, loggerOpts ){
   if( name in loggers ){
-    console.log( 'get' );
     return loggers[ name ];
   }
   else {
-    console.log( 'create' );
     var logger = new createLogger( loggerOpts );
     loggers[ name ] = logger;
     return logger;
@@ -34,4 +39,4 @@ function getLogger( name, loggerOpts ){
 module.exports = {
   get: getLogger,
   winston: winston
-}
+};
