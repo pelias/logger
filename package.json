@@ -1,6 +1,6 @@
 {
   "name": "pelias-logger",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "The centralized logger package for Pelias.",
   "keywords": ["pelias", "logger"],
   "author": "mapzen",
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "winston": "^0.9.0",
-    "pelias-config": "^0.0.7"
+    "pelias-config": "^0.x.x"
   },
   "repository": {
     "type": "git",
