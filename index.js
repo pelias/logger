@@ -9,14 +9,15 @@ var peliasConfig = require( 'pelias-config' );
 
 var pkgConfig = peliasConfig.generate().logger;
 
-function createLogger( loggerOpts ){
+function createLogger( name, loggerOpts ){
   if( loggerOpts === undefined ){
     loggerOpts = {
       transports: [
         new winston.transports.Console( {
           colorize: true,
           timestamp: true,
-          level: pkgConfig.level
+          level: pkgConfig.level,
+          label: name
         })
       ]
     };
@@ -35,7 +36,7 @@ function getLogger( name, loggerOpts ){
     return loggers[ name ];
   }
   else {
-    var logger = new createLogger( loggerOpts );
+    var logger = new createLogger( name, loggerOpts );
     loggers[ name ] = logger;
     return logger;
   }
