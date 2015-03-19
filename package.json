@@ -1,6 +1,6 @@
 {
   "name": "pelias-logger",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "The centralized logger package for Pelias.",
   "keywords": ["pelias", "logger"],
   "author": "mapzen",
