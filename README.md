@@ -7,7 +7,9 @@ Pelias-specific transports and default configurations.
 
 ### config
 The logger will set its log levels to the `logger.level` property in `pelias-config`, which should be set to any of the
-default winston [options](https://github.com/winstonjs/winston#logging-levels).
+default winston [options](https://github.com/winstonjs/winston#logging-levels). `logger.timestamp` and
+`logger.colorize` take boolean values (defaulting to `true`) that indicate whether log lines should have a
+timestamp/be colorized.
 
 ### API
 ##### `get( name, loggerOpts )`
