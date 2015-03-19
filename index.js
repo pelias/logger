@@ -5,7 +5,7 @@
 'use strict';
 
 var winston = require( 'winston' );
-var peliasConfig = require( 'pelias-config' );
+var peliasConfig = require( '../config' );
 
 var pkgConfig = peliasConfig.generate().logger;
 
@@ -14,8 +14,8 @@ function createLogger( name, loggerOpts ){
     loggerOpts = {
       transports: [
         new winston.transports.Console( {
-          colorize: true,
-          timestamp: true,
+          colorize: pkgConfig.colorize,
+          timestamp: pkgConfig.timestamp,
           level: pkgConfig.level,
           label: name
         })
