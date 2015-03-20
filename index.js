@@ -5,7 +5,7 @@
 'use strict';
 
 var winston = require( 'winston' );
-var peliasConfig = require( '../config' );
+var peliasConfig = require( 'pelias-config' );
 
 var pkgConfig = peliasConfig.generate().logger;
 
