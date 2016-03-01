@@ -12,6 +12,10 @@
     "winston": "^0.9.0",
     "pelias-config": ">=0.1.4"
   },
+  "scripts": {
+    "units": "node test/units.js",
+    "test": "npm run units"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/pelias/logger"
