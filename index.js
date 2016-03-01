@@ -9,7 +9,7 @@ var peliasConfig = require( 'pelias-config' );
 
 var pkgConfig = peliasConfig.generate().logger;
 
-function createLogger( name, loggerOpts ){
+function CreateLogger( name, loggerOpts ){
   if( loggerOpts === undefined ){
     loggerOpts = {
       transports: [
@@ -36,7 +36,7 @@ function getLogger( name, loggerOpts ){
     return loggers[ name ];
   }
   else {
-    var logger = new createLogger( name, loggerOpts );
+    var logger = new CreateLogger( name, loggerOpts );
     loggers[ name ] = logger;
     return logger;
   }
