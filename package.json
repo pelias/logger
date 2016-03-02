@@ -2,14 +2,17 @@
   "name": "pelias-logger",
   "version": "0.0.8",
   "description": "The centralized logger package for Pelias.",
-  "keywords": ["pelias", "logger"],
+  "keywords": [
+    "pelias",
+    "logger"
+  ],
   "author": "mapzen",
   "main": "index.js",
   "devDependencies": {
-    "precommit-hook": "1.0.7"
+    "precommit-hook": "3.0.0"
   },
   "dependencies": {
-    "winston": "^0.9.0",
+    "winston": "^2.2.0",
     "pelias-config": ">=0.1.4"
   },
   "scripts": {
