@@ -17,7 +17,9 @@
   },
   "scripts": {
     "units": "node test/units.js",
-    "test": "npm run units"
+    "test": "npm run units",
+    "lint": "jshint .",
+    "validate": "npm ls"
   },
   "repository": {
     "type": "git",
@@ -27,5 +29,10 @@
   "bugs": {
     "url": "https://github.com/pelias/logger/issues"
   },
-  "homepage": "https://github.com/pelias/logger"
+  "homepage": "https://github.com/pelias/logger",
+  "pre-commit": [
+    "lint",
+    "validate",
+    "test"
+  ]
 }
