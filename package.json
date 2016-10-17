@@ -1,6 +1,6 @@
 {
   "name": "pelias-logger",
-  "version": "0.0.8",
+  "version": "0.0.0-semantic-release",
   "description": "The centralized logger package for Pelias.",
   "keywords": [
     "pelias",
@@ -9,7 +9,8 @@
   "author": "mapzen",
   "main": "index.js",
   "devDependencies": {
-    "precommit-hook": "3.0.0"
+    "precommit-hook": "3.0.0",
+    "semantic-release": "^4.3.5"
   },
   "dependencies": {
     "winston": "^2.2.0",
@@ -18,8 +19,10 @@
   "scripts": {
     "units": "node test/units.js",
     "test": "npm run units",
+    "travis": "npm test",
     "lint": "jshint .",
-    "validate": "npm ls"
+    "validate": "npm ls",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
