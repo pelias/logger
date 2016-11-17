@@ -13,7 +13,7 @@
   "main": "index.js",
   "devDependencies": {
     "precommit-hook": "3.0.0",
-    "semantic-release": "^4.3.5"
+    "semantic-release": "^6.3.2"
   },
   "dependencies": {
     "winston": "^2.2.0",
