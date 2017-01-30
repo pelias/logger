@@ -1,5 +1,7 @@
 # logger
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/pelias/logger.svg)](https://greenkeeper.io/)
+
 [![NPM](https://nodei.co/npm/pelias-logger.png)](https://nodei.co/npm/pelias-logger/)
 
 The centralized logger package for Pelias, which wraps [winston](https://github.com/winstonjs/winston) with
