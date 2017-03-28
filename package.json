@@ -12,6 +12,7 @@
   "author": "mapzen",
   "main": "index.js",
   "devDependencies": {
+    "npm-check": "^5.4.0",
     "precommit-hook": "3.0.0",
     "semantic-release": "^6.3.2"
   },
