@@ -12,20 +12,22 @@
   "author": "mapzen",
   "main": "index.js",
   "devDependencies": {
+    "npm-check": "^5.4.0",
     "precommit-hook": "3.0.0",
     "semantic-release": "^6.3.2"
   },
   "dependencies": {
     "winston": "^2.2.0",
-    "pelias-config": "2.7.1"
+    "pelias-config": "2.9.0"
   },
   "scripts": {
     "units": "node test/units.js",
     "test": "npm run units",
-    "travis": "npm test",
+    "travis": "npm run check-dependencies && npm test",
     "lint": "jshint .",
     "validate": "npm ls",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "check-dependencies": "node_modules/.bin/npm-check --production"
   },
   "repository": {
     "type": "git",
@@ -39,6 +41,7 @@
   "pre-commit": [
     "lint",
     "validate",
-    "test"
+    "test",
+    "check-dependencies"
   ]
 }
