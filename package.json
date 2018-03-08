@@ -14,7 +14,7 @@
   "devDependencies": {
     "npm-check": "git://github.com/orangejulius/npm-check.git#disable-update-check",
     "precommit-hook": "3.0.0",
-    "semantic-release": "^8.0.3"
+    "semantic-release": "^15.0.0"
   },
   "dependencies": {
     "winston": "^2.2.0",
