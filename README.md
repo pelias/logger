@@ -1,19 +1,23 @@
-# logger
+>This repository is part of the [Pelias](https://github.com/pelias/pelias)
+>project. Pelias is an open-source, open-data geocoder originally sponsored by
+>[Mapzen](https://www.mapzen.com/). Our official user documentation is
+>[here](https://github.com/pelias/documentation).
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/pelias/logger.svg)](https://greenkeeper.io/)
-
-[![NPM](https://nodei.co/npm/pelias-logger.png)](https://nodei.co/npm/pelias-logger/)
+# Pelias Logger
 
 The centralized logger package for Pelias, which wraps [winston](https://github.com/winstonjs/winston) with
 Pelias-specific transports and default configurations.
 
-### config
+[![Greenkeeper badge](https://badges.greenkeeper.io/pelias/logger.svg)](https://greenkeeper.io/)
+[![NPM](https://nodei.co/npm/pelias-logger.png)](https://nodei.co/npm/pelias-logger/)
+
+### Config
 The logger will set its log levels to the `logger.level` property in `pelias-config`, which should be set to any of the
 default winston [options](https://github.com/winstonjs/winston#logging-levels). `logger.timestamp` and
 `logger.colorize` take boolean values (defaulting to `true`) that indicate whether log lines should have a
 timestamp/be colorized.
 
-### API
+### Interface
 ##### `get( name, loggerOpts )`
 Retrieve a logger with a specific name or, if none is found, create a new one.
 
@@ -25,7 +29,7 @@ Retrieve a logger with a specific name or, if none is found, create a new one.
 The winston package is exposed via this option, to provide access to any items needed in custom `loggerOpts` passed to
 `get()` (like `winston.transports.*` classes).
 
-### example
+### Example
 ```javascript
 var peliasLogger = require( 'pelias-logger' );
 var logger1 = peliasLogger.get( 'logger1' );
