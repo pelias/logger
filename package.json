@@ -12,12 +12,12 @@
   "author": "mapzen",
   "main": "index.js",
   "devDependencies": {
-    "precommit-hook": "3.0.0",
+    "precommit-hook": "^3.0.0",
     "semantic-release": "^15.0.0"
   },
   "dependencies": {
     "winston": "^2.2.0",
-    "pelias-config": "3.0.2"
+    "pelias-config": "^3.0.2"
   },
   "scripts": {
     "units": "node test/units.js",
