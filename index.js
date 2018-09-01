@@ -16,6 +16,7 @@ function CreateLogger( name, loggerOpts ){
         new winston.transports.Console( {
           colorize: pkgConfig.colorize,
           json: pkgConfig.json,
+          stringify: true,
           timestamp: pkgConfig.timestamp,
           level: pkgConfig.level,
           label: name
