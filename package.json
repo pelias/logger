@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "winston": "^2.2.0",
-    "pelias-config": "^3.0.2"
+    "pelias-config": "^4.0.0"
   },
   "scripts": {
     "units": "node test/units.js",
