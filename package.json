@@ -21,7 +21,6 @@
   "scripts": {
     "units": "node test/units.js",
     "test": "npm run units",
-    "travis": "npm test",
     "lint": "jshint .",
     "validate": "npm ls"
   },
