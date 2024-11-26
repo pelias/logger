@@ -20,7 +20,7 @@ function CreateLogger( name, loggerOpts ){
           timestamp: pkgConfig.timestamp,
           level: pkgConfig.level,
           label: name,
-          stderrLevels: ["emerg", "alert", "crit", "error"]
+          stderrLevels: ['emerg', 'alert', 'crit', 'error']
         })
       ]
     };
